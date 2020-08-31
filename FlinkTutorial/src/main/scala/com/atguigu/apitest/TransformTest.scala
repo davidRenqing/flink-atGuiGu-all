@@ -153,5 +153,8 @@ class MyMapper() extends RichMapFunction[SensorReading, String]{
     "flink"
   }
 
+  getRuntimeContext.getMetricGroup.counter(5)
+
+
   override def open(parameters: Configuration): Unit = super.open(parameters)
 }
